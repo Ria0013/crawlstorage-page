@@ -248,8 +248,12 @@ sendMessageButton.addEventListener(
     "click",
     function () {
 
+        const message =
+            messageInput.value.trim();
+
+
         if (
-            messageInput.value.trim() === ""
+            message === ""
         ) {
 
             messageInput.focus();
@@ -263,8 +267,20 @@ sendMessageButton.addEventListener(
             messageRecipient.value;
 
 
+        const currentTime =
+            clwTime.textContent;
+
+
         messageResult.innerHTML =
-            `메시지가 ${recipient}로 발송되었습니다.`;
+
+            `MESSAGE SENT<br><br>
+
+             TO: ${recipient}<br>
+
+             CONTENT: ${message}<br><br>
+
+             ${currentTime}`;
+
 
         messageInput.value =
             "";
