@@ -62,11 +62,6 @@ function showScreen(screen) {
 
 function changeTheme(name) {
 
-
-    // =========================
-    // 기존 테마 제거
-    // =========================
-
     document.body.classList.remove(
 
         "theme-juseongji",
@@ -86,32 +81,9 @@ function changeTheme(name) {
     );
 
 
-    mainScreen.classList.remove(
-
-        "theme-juseongji",
-
-        "theme-gaksu",
-
-        "theme-ria",
-
-        "theme-yuriryu",
-
-        "theme-beopeu",
-
-        "theme-s급",
-
-        "theme-remember"
-
-    );
-
-
     const lowerName =
-        name.toLowerCase();
+        name.trim().toLowerCase();
 
-
-    // =========================
-    // 주성지
-    // =========================
 
     if (
         lowerName === "juseongji"
@@ -121,17 +93,8 @@ function changeTheme(name) {
             "theme-juseongji"
         );
 
-
-        mainScreen.classList.add(
-            "theme-juseongji"
-        );
-
     }
 
-
-    // =========================
-    // 각수
-    // =========================
 
     else if (
         lowerName === "gaksu"
@@ -141,17 +104,8 @@ function changeTheme(name) {
             "theme-gaksu"
         );
 
-
-        mainScreen.classList.add(
-            "theme-gaksu"
-        );
-
     }
 
-
-    // =========================
-    // 리아
-    // =========================
 
     else if (
         lowerName === "ria"
@@ -161,17 +115,8 @@ function changeTheme(name) {
             "theme-ria"
         );
 
-
-        mainScreen.classList.add(
-            "theme-ria"
-        );
-
     }
 
-
-    // =========================
-    // 유리류
-    // =========================
 
     else if (
         lowerName === "yuriryu"
@@ -181,17 +126,8 @@ function changeTheme(name) {
             "theme-yuriryu"
         );
 
-
-        mainScreen.classList.add(
-            "theme-yuriryu"
-        );
-
     }
 
-
-    // =========================
-    // 버프
-    // =========================
 
     else if (
         lowerName === "beopeu"
@@ -201,48 +137,25 @@ function changeTheme(name) {
             "theme-beopeu"
         );
 
-
-        mainScreen.classList.add(
-            "theme-beopeu"
-        );
-
     }
 
 
-    // =========================
-    // S급
-    // =========================
-
     else if (
-        name === "S급"
+        name.trim() === "S급"
     ) {
 
         document.body.classList.add(
             "theme-s급"
         );
 
-
-        mainScreen.classList.add(
-            "theme-s급"
-        );
-
     }
 
-
-    // =========================
-    // remember
-    // =========================
 
     else if (
         lowerName === "remember"
     ) {
 
         document.body.classList.add(
-            "theme-remember"
-        );
-
-
-        mainScreen.classList.add(
             "theme-remember"
         );
 
