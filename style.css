@@ -1512,9 +1512,9 @@ textarea:focus-visible {
 
 /* 1. 주성지 */
 
-body.theme-juseongji .main-header,
-body.theme-juseongji .header-brand,
-body.theme-juseongji .header-time {
+#main-screen.theme-juseongji .main-header,
+#main-screen.theme-juseongji .header-brand,
+#main-screen.theme-juseongji .header-time {
 
     background: #af6464 !important;
 
@@ -1523,9 +1523,9 @@ body.theme-juseongji .header-time {
 
 /* 2. 각수 */
 
-body.theme-gaksu .main-header,
-body.theme-gaksu .header-brand,
-body.theme-gaksu .header-time {
+#main-screen.theme-gaksu .main-header,
+#main-screen.theme-gaksu .header-brand,
+#main-screen.theme-gaksu .header-time {
 
     background: #536834 !important;
 
@@ -1534,9 +1534,9 @@ body.theme-gaksu .header-time {
 
 /* 3. 리아 */
 
-body.theme-ria .main-header,
-body.theme-ria .header-brand,
-body.theme-ria .header-time {
+#main-screen.theme-ria .main-header,
+#main-screen.theme-ria .header-brand,
+#main-screen.theme-ria .header-time {
 
     background: #8c97f7 !important;
 
@@ -1545,9 +1545,9 @@ body.theme-ria .header-time {
 
 /* 4. 유리류 */
 
-body.theme-yuriryu .main-header,
-body.theme-yuriryu .header-brand,
-body.theme-yuriryu .header-time {
+#main-screen.theme-yuriryu .main-header,
+#main-screen.theme-yuriryu .header-brand,
+#main-screen.theme-yuriryu .header-time {
 
     background: #21177b !important;
 
@@ -1556,9 +1556,9 @@ body.theme-yuriryu .header-time {
 
 /* 5. 버프 */
 
-body.theme-beopeu .main-header,
-body.theme-beopeu .header-brand,
-body.theme-beopeu .header-time {
+#main-screen.theme-beopeu .main-header,
+#main-screen.theme-beopeu .header-brand,
+#main-screen.theme-beopeu .header-time {
 
     background: #39b07e !important;
 
@@ -1567,9 +1567,9 @@ body.theme-beopeu .header-time {
 
 /* 6. S급 */
 
-body.theme-s급 .main-header,
-body.theme-s급 .header-brand,
-body.theme-s급 .header-time {
+#main-screen.theme-s급 .main-header,
+#main-screen.theme-s급 .header-brand,
+#main-screen.theme-s급 .header-time {
 
     background: #b0393b !important;
 
@@ -1578,9 +1578,9 @@ body.theme-s급 .header-time {
 
 /* 7. remember */
 
-body.theme-remember .main-header,
-body.theme-remember .header-brand,
-body.theme-remember .header-time {
+#main-screen.theme-remember .main-header,
+#main-screen.theme-remember .header-brand,
+#main-screen.theme-remember .header-time {
 
     background: #dcedd9 !important;
 
