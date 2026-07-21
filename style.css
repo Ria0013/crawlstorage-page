@@ -1512,76 +1512,76 @@ textarea:focus-visible {
 
 /* 1. 주성지 */
 
-#main-screen.theme-juseongji .main-header,
-#main-screen.theme-juseongji .header-brand,
-#main-screen.theme-juseongji .header-time {
+body.theme-juseongji #main-screen .main-header,
+body.theme-juseongji #main-screen .header-brand,
+body.theme-juseongji #main-screen .header-time {
 
-    background: #af6464 !important;
+    background-color: #af6464 !important;
 
 }
 
 
 /* 2. 각수 */
 
-#main-screen.theme-gaksu .main-header,
-#main-screen.theme-gaksu .header-brand,
-#main-screen.theme-gaksu .header-time {
+body.theme-gaksu #main-screen .main-header,
+body.theme-gaksu #main-screen .header-brand,
+body.theme-gaksu #main-screen .header-time {
 
-    background: #536834 !important;
+    background-color: #536834 !important;
 
 }
 
 
 /* 3. 리아 */
 
-#main-screen.theme-ria .main-header,
-#main-screen.theme-ria .header-brand,
-#main-screen.theme-ria .header-time {
+body.theme-ria #main-screen .main-header,
+body.theme-ria #main-screen .header-brand,
+body.theme-ria #main-screen .header-time {
 
-    background: #8c97f7 !important;
+    background-color: #8c97f7 !important;
 
 }
 
 
 /* 4. 유리류 */
 
-#main-screen.theme-yuriryu .main-header,
-#main-screen.theme-yuriryu .header-brand,
-#main-screen.theme-yuriryu .header-time {
+body.theme-yuriryu #main-screen .main-header,
+body.theme-yuriryu #main-screen .header-brand,
+body.theme-yuriryu #main-screen .header-time {
 
-    background: #21177b !important;
+    background-color: #21177b !important;
 
 }
 
 
 /* 5. 버프 */
 
-#main-screen.theme-beopeu .main-header,
-#main-screen.theme-beopeu .header-brand,
-#main-screen.theme-beopeu .header-time {
+body.theme-beopeu #main-screen .main-header,
+body.theme-beopeu #main-screen .header-brand,
+body.theme-beopeu #main-screen .header-time {
 
-    background: #39b07e !important;
+    background-color: #39b07e !important;
 
 }
 
 
 /* 6. S급 */
 
-#main-screen.theme-s급 .main-header,
-#main-screen.theme-s급 .header-brand,
-#main-screen.theme-s급 .header-time {
+body.theme-s급 #main-screen .main-header,
+body.theme-s급 #main-screen .header-brand,
+body.theme-s급 #main-screen .header-time {
 
-    background: #b0393b !important;
+    background-color: #b0393b !important;
 
 }
 
 
 /* 7. remember */
 
-#main-screen.theme-remember .main-header,
-#main-screen.theme-remember .header-brand,
-#main-screen.theme-remember .header-time {
+body.theme-remember #main-screen .main-header,
+body.theme-remember #main-screen .header-brand,
+body.theme-remember #main-screen .header-time {
 
-    background: #dcedd9 !important;
+    background-color: #dcedd9 !important;
 
 }
