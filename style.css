@@ -1057,3 +1057,448 @@ textarea:focus-visible {
     }
 
 }
+
+
+/* =========================
+   숨겨진 이상 현상 기록실
+========================= */
+
+#anomaly-screen {
+
+    display: none;
+
+    min-height: 100vh;
+
+    background-color: var(--brown);
+
+    color: var(--white);
+
+}
+
+
+#anomaly-screen.active {
+
+    display: flex;
+
+}
+
+
+.anomaly-container {
+
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    padding: 28px 0 40px;
+
+}
+
+
+/* =========================
+   이상 현상 헤더
+========================= */
+
+.anomaly-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 2px solid var(--yellow);
+
+}
+
+
+.anomaly-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+
+.anomaly-logo {
+
+    width: 58px;
+
+    height: 58px;
+
+    object-fit: contain;
+
+}
+
+
+.anomaly-system-title {
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+.anomaly-restricted {
+
+    margin-top: 6px;
+
+    color: var(--yellow);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.anomaly-warning {
+
+    color: var(--yellow);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================
+   이상 현상 메인
+========================= */
+
+.anomaly-main {
+
+    max-width: 850px;
+
+    margin: 60px auto 0;
+
+}
+
+
+.anomaly-title-block {
+
+    margin-bottom: 32px;
+
+}
+
+
+.anomaly-label {
+
+    margin-bottom: 12px;
+
+    color: var(--yellow);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.anomaly-title-block h1 {
+
+    margin-bottom: 12px;
+
+    font-size: clamp(26px, 5vw, 42px);
+
+    font-weight: 700;
+
+}
+
+
+.anomaly-title-block p {
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   이상 현상 기록
+========================= */
+
+.anomaly-record {
+
+    border: 2px solid var(--yellow);
+
+    background-color: var(--white);
+
+    color: var(--brown);
+
+}
+
+
+.record-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 18px 20px;
+
+    border-bottom: 2px solid var(--yellow);
+
+    background-color: var(--yellow);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.record-status {
+
+    color: var(--green);
+
+}
+
+
+.record-body {
+
+    padding: 22px;
+
+}
+
+
+.record-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid rgba(49, 22, 22, 0.25);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 11px;
+
+}
+
+
+.record-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.record-row strong {
+
+    color: var(--green);
+
+    text-align: right;
+
+}
+
+
+.record-warning {
+
+    padding: 16px 20px;
+
+    border-top: 2px solid var(--brown);
+
+    background-color: var(--brown);
+
+    color: var(--yellow);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   기록 보충 문서
+========================= */
+
+.anomaly-document {
+
+    margin-top: 24px;
+
+    padding: 24px;
+
+    border: 2px solid rgba(255, 255, 255, 0.6);
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+}
+
+
+.document-label {
+
+    margin-bottom: 18px;
+
+    color: var(--yellow);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.anomaly-document p {
+
+    margin-bottom: 14px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+.corrupted-text {
+
+    margin-top: 24px;
+
+    padding-top: 16px;
+
+    border-top: 1px dashed rgba(247, 209, 140, 0.6);
+
+    color: var(--yellow);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* =========================
+   돌아가기
+========================= */
+
+.anomaly-return-button {
+
+    margin-top: 30px;
+
+    border-color: var(--yellow);
+
+}
+
+
+.anomaly-return-button:hover {
+
+    background-color: var(--white);
+
+}
+
+
+/* =========================
+   하단
+========================= */
+
+.anomaly-footer {
+
+    margin-top: 70px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================
+   모바일
+========================= */
+
+@media (max-width: 600px) {
+
+
+    .anomaly-container {
+
+        width: 92%;
+
+        padding-top: 20px;
+
+    }
+
+
+    .anomaly-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .anomaly-main {
+
+        margin-top: 40px;
+
+    }
+
+
+    .record-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+
+    .record-row {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 6px;
+
+    }
+
+
+    .record-row strong {
+
+        text-align: left;
+
+    }
+
+
+}
