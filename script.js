@@ -56,22 +56,106 @@ function showScreen(screen) {
 }
 
 // =========================
-// 특정 인물 전용 테마
+// 인물별 메인 테마
 // =========================
 
 function changeTheme(name) {
 
     document.body.classList.remove(
-        "theme-special"
+
+        "theme-juseongji",
+
+        "theme-gaksu",
+
+        "theme-ria",
+
+        "theme-yuriryu",
+
+        "theme-beopeu",
+
+        "theme-s급",
+
+        "theme-remember"
+
     );
 
 
+    const lowerName =
+        name.toLowerCase();
+
+
     if (
-        name === "주성지"
+        lowerName === "juseongji"
     ) {
 
         document.body.classList.add(
-            "theme-special"
+            "theme-juseongji"
+        );
+
+    }
+
+
+    else if (
+        lowerName === "gaksu"
+    ) {
+
+        document.body.classList.add(
+            "theme-gaksu"
+        );
+
+    }
+
+
+    else if (
+        lowerName === "ria"
+    ) {
+
+        document.body.classList.add(
+            "theme-ria"
+        );
+
+    }
+
+
+    else if (
+        lowerName === "yuriryu"
+    ) {
+
+        document.body.classList.add(
+            "theme-yuriryu"
+        );
+
+    }
+
+
+    else if (
+        lowerName === "beopeu"
+    ) {
+
+        document.body.classList.add(
+            "theme-beopeu"
+        );
+
+    }
+
+
+    else if (
+        name === "S급"
+    ) {
+
+        document.body.classList.add(
+            "theme-s급"
+        );
+
+    }
+
+
+    else if (
+        lowerName === "remember"
+    ) {
+
+        document.body.classList.add(
+            "theme-remember"
         );
 
     }
@@ -184,7 +268,21 @@ logoutButton.addEventListener(
             "UNKNOWN";
 
         document.body.classList.remove(
-            "theme-special"
+            
+            "theme-juseongji",
+            
+            "theme-gaksu",
+            
+            "theme-ria",
+            
+            "theme-yuriryu",
+            
+            "theme-beopeu",
+            
+            "theme-s급",
+            
+            "theme-remember"
+        
         );
 
 
