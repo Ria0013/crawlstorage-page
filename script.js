@@ -401,15 +401,142 @@ sendMessageButton.addEventListener(
             clwTime.textContent;
 
 
-        messageResult.innerHTML =
+        // =========================
+        // 메시지 이스터에그
+        // =========================
 
-            `MESSAGE SENT<br><br>
+        let specialMessage =
+            "";
 
-             TO: ${recipient}<br>
 
-             CONTENT: ${message}<br><br>
+        if (
+            message.includes("다른") &&
+            message.includes("시간선")
+        ) {
 
-             ${currentTime}`;
+            specialMessage =
+                "이런, 다른 시간선 속에 빠졌구나. 걱정 마, 돌아갈 방법은 있어.";
+
+        }
+
+
+        else if (
+            message === "넌 누구야"
+        ) {
+
+            specialMessage =
+                "나? 사라진 존재니 알아봤자 소용 없지 않을까. 네가 이걸 본 시간에는 이미 존재하지 않을 거야.";
+
+        }
+
+
+        else if (
+            message === "숙소 전등"
+        ) {
+
+            specialMessage =
+                "숙소 전등은 이미 멸망한 다른 세계로 이어져 있어. 후후, 두렵지 않니?";
+
+        }
+
+
+        else if (
+            message.includes("이현") ||
+            message.includes("이 현")
+        ) {
+
+            specialMessage =
+                "어라, 기억해냈어? 잊는 게 어때? 어차피 돌아올 수 없는 사람이잖아.";
+
+        }
+
+
+        else if (
+            message.includes("회식")
+        ) {
+
+            specialMessage =
+                "발송 불가능한 단어가 포함되어있습니다. 관리자에게 문의해주세요. [관리자: 유리류]";
+
+        }
+
+
+        else if (
+            message.includes("발송불가단어")
+        ) {
+
+            specialMessage =
+                "회식";
+
+        }
+
+
+        else if (
+            message.includes("암호")
+        ) {
+
+            specialMessage =
+                "암호가 궁금해? 회귀자 | 다른 | 시간선 | 이현 | 넌 누구야 | 숙소 전등 등이 있어. 축하해, 잘 찾았네?";
+
+        }
+
+
+        else if (
+            message.includes("LR")
+        ) {
+
+            specialMessage =
+                "회귀자는 각수, 희생자는 주성지, 희망은 버프, 마침내 그 너머를 볼 사람은- [시스템이 답변을 차단합니다.]";
+
+        }
+
+
+        else if (
+            message.includes("회귀자")
+        ) {
+
+            specialMessage =
+                "Code name: Gaksu";
+
+        }
+
+
+        // =========================
+        // 메시지 출력
+        // =========================
+
+        if (
+            specialMessage !== ""
+        ) {
+
+            messageResult.innerHTML =
+
+                `MESSAGE SENT<br><br>
+
+                 TO: ${recipient}<br>
+
+                 CONTENT: ${message}<br><br>
+
+                 ${specialMessage}<br><br>
+
+                 ${currentTime}`;
+
+        }
+
+
+        else {
+
+            messageResult.innerHTML =
+
+                `MESSAGE SENT<br><br>
+
+                 TO: ${recipient}<br>
+
+                 CONTENT: ${message}<br><br>
+
+                 ${currentTime}`;
+
+        }
 
 
         messageInput.value =
