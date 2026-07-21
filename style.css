@@ -1504,45 +1504,84 @@ textarea:focus-visible {
 }
 
 
+
 /* =========================
-   인물별 메인 테마
+   인물별 테마
 ========================= */
 
-body.theme-gaksu #main-screen .main-header {
-    background-color: #536834 !important;
+
+/* 1. 주성지 */
+
+body.theme-juseongji .main-header,
+body.theme-juseongji .header-brand,
+body.theme-juseongji .header-time {
+
+    background: #af6464 !important;
+
 }
 
 
-body.theme-ria #main-screen .main-header {
-    background-color: #8c97f7 !important;
+/* 2. 각수 */
+
+body.theme-gaksu .main-header,
+body.theme-gaksu .header-brand,
+body.theme-gaksu .header-time {
+
+    background: #536834 !important;
+
 }
 
 
-body.theme-yuriryu #main-screen .main-header {
-    background-color: #21177b !important;
+/* 3. 리아 */
+
+body.theme-ria .main-header,
+body.theme-ria .header-brand,
+body.theme-ria .header-time {
+
+    background: #8c97f7 !important;
+
 }
 
 
-body.theme-beopeu #main-screen .main-header {
-    background-color: #39b07e !important;
+/* 4. 유리류 */
+
+body.theme-yuriryu .main-header,
+body.theme-yuriryu .header-brand,
+body.theme-yuriryu .header-time {
+
+    background: #21177b !important;
+
 }
 
 
-body.theme-s급 #main-screen .main-header {
-    background-color: #b0393b !important;
+/* 5. 버프 */
+
+body.theme-beopeu .main-header,
+body.theme-beopeu .header-brand,
+body.theme-beopeu .header-time {
+
+    background: #39b07e !important;
+
 }
 
 
-body.theme-remember #main-screen .main-header {
-    background-color: #dcedd9 !important;
+/* 6. S급 */
+
+body.theme-s급 .main-header,
+body.theme-s급 .header-brand,
+body.theme-s급 .header-time {
+
+    background: #b0393b !important;
+
 }
 
 
-body.theme-s급 #main-screen {
-    background-color: #b0393b;
-}
+/* 7. remember */
 
+body.theme-remember .main-header,
+body.theme-remember .header-brand,
+body.theme-remember .header-time {
 
-body.theme-remember #main-screen {
-    background-color: #dcedd9;
+    background: #dcedd9 !important;
+
 }
