@@ -377,7 +377,7 @@ sendFileButton.addEventListener(
                 "먼저 파일을 선택하시오.";
 
             return;
-
+        
         }
 
 
@@ -385,8 +385,13 @@ sendFileButton.addEventListener(
             fileRecipient.value;
 
 
+        const currentTime =
+            clwTime.textContent;
+
+
         fileResult.innerHTML =
-            `${selectedFileName}을 ${recipient}로 발송했습니다.`;
+            `${selectedFileName}을 ${recipient}로 발송했습니다.<br>
+             ${currentTime}`;
 
     }
 );
