@@ -399,6 +399,7 @@ sendFileButton.addEventListener(
 let logoClickCount =
     0;
 
+
 let logoClickTimer;
 
 
@@ -437,6 +438,51 @@ mainLogo.addEventListener(
             clearTimeout(
                 logoClickTimer
             );
+
+
+            const firstConfirm =
+                confirm(
+                    "접속하시겠습니까?"
+                );
+
+
+            if (
+                !firstConfirm
+            ) {
+
+                return;
+
+            }
+
+
+            const secondConfirm =
+                confirm(
+                    "접속 시 발생하는 문제는 책임지지 않습니다."
+                );
+
+
+            if (
+                !secondConfirm
+            ) {
+
+                return;
+
+            }
+
+
+            const thirdConfirm =
+                confirm(
+                    "마지막으로 질문합니다. 접속하시겠습니까?"
+                );
+
+
+            if (
+                !thirdConfirm
+            ) {
+
+                return;
+
+            }
 
 
             showScreen(
