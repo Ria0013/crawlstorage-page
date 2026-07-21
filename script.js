@@ -22,20 +22,6 @@ const loadingProgress =
     document.getElementById("loading-progress");
 
 
-// =========================
-// 화면 전환 함수
-// =========================
-
-function showScreen(screen) {
-
-    loginScreen.classList.remove("active");
-    loadingScreen.classList.remove("active");
-    mainScreen.classList.remove("active");
-
-    screen.classList.add("active");
-
-}
-
 
 // =========================
 // 입장 기능
@@ -465,6 +451,126 @@ window.addEventListener(
         showScreen(loginScreen);
 
         employeeNameInput.focus();
+
+    }
+);
+
+
+// =========================
+// 숨겨진 이상 현상 페이지
+// =========================
+
+const anomalyScreen =
+    document.getElementById("anomaly-screen");
+
+
+const returnArchiveButton =
+    document.getElementById(
+        "return-archive-button"
+    );
+
+
+// 메인 화면의 Z.png 로고
+
+const mainLogo =
+    document.querySelector(
+        ".header-logo"
+    );
+
+
+// =========================
+// 화면 전환 함수 수정
+// =========================
+
+function showScreen(screen) {
+
+    loginScreen.classList.remove("active");
+
+    loadingScreen.classList.remove("active");
+
+    mainScreen.classList.remove("active");
+
+    anomalyScreen.classList.remove("active");
+
+
+    screen.classList.add("active");
+
+}
+
+
+// =========================
+// 로고 5회 클릭 감지
+// =========================
+
+let logoClickCount =
+    0;
+
+
+let logoClickTimer;
+
+
+mainLogo.addEventListener(
+    "click",
+    function () {
+
+        logoClickCount++;
+
+
+        clearTimeout(
+            logoClickTimer
+        );
+
+
+        logoClickTimer =
+            setTimeout(
+                function () {
+
+                    logoClickCount =
+                        0;
+
+                },
+                1500
+            );
+
+
+        // 5번 빠르게 클릭하면
+        // 숨겨진 이상 현상 기록실로 이동
+
+        if (
+            logoClickCount >= 5
+        ) {
+
+            logoClickCount =
+                0;
+
+
+            clearTimeout(
+                logoClickTimer
+            );
+
+
+            showScreen(
+                anomalyScreen
+            );
+
+        }
+
+    }
+);
+
+
+// =========================
+// 이상 현상 기록실에서
+// 메인 화면으로 돌아가기
+// =========================
+
+returnArchiveButton.addEventListener(
+    "click",
+    function () {
+
+        showScreen(
+            mainScreen
+        );
 
     }
 );
