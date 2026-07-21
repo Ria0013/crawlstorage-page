@@ -55,13 +55,15 @@ function showScreen(screen) {
 
 }
 
+
 // =========================
 // 인물별 메인 테마
 // =========================
 
 function changeTheme(name) {
 
-    document.body.classList.remove(
+
+    mainScreen.classList.remove(
 
         "theme-juseongji",
 
@@ -88,7 +90,7 @@ function changeTheme(name) {
         lowerName === "juseongji"
     ) {
 
-        document.body.classList.add(
+        mainScreen.classList.add(
             "theme-juseongji"
         );
 
@@ -99,7 +101,7 @@ function changeTheme(name) {
         lowerName === "gaksu"
     ) {
 
-        document.body.classList.add(
+        mainScreen.classList.add(
             "theme-gaksu"
         );
 
@@ -110,7 +112,7 @@ function changeTheme(name) {
         lowerName === "ria"
     ) {
 
-        document.body.classList.add(
+        mainScreen.classList.add(
             "theme-ria"
         );
 
@@ -121,7 +123,7 @@ function changeTheme(name) {
         lowerName === "yuriryu"
     ) {
 
-        document.body.classList.add(
+        mainScreen.classList.add(
             "theme-yuriryu"
         );
 
@@ -132,7 +134,7 @@ function changeTheme(name) {
         lowerName === "beopeu"
     ) {
 
-        document.body.classList.add(
+        mainScreen.classList.add(
             "theme-beopeu"
         );
 
@@ -143,7 +145,7 @@ function changeTheme(name) {
         name === "S급"
     ) {
 
-        document.body.classList.add(
+        mainScreen.classList.add(
             "theme-s급"
         );
 
@@ -154,7 +156,7 @@ function changeTheme(name) {
         lowerName === "remember"
     ) {
 
-        document.body.classList.add(
+        mainScreen.classList.add(
             "theme-remember"
         );
 
@@ -267,23 +269,23 @@ logoutButton.addEventListener(
         userName.textContent =
             "UNKNOWN";
 
-        document.body.classList.remove(
-            
-            "theme-juseongji",
-            
-            "theme-gaksu",
-            
-            "theme-ria",
-            
-            "theme-yuriryu",
-            
-            "theme-beopeu",
-            
-            "theme-s급",
-            
-            "theme-remember"
-        
-        );
+        mainScreen.classList.remove(
+
+    "theme-juseongji",
+
+    "theme-gaksu",
+
+    "theme-ria",
+
+    "theme-yuriryu",
+
+    "theme-beopeu",
+
+    "theme-s급",
+
+    "theme-remember"
+
+);
 
 
         employeeNameInput.focus();
