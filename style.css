@@ -1508,12 +1508,13 @@ textarea:focus-visible {
    인물별 테마
 ========================= */
 
+/* =========================
+   1. 주성지
+========================= */
 
-/* 주성지 */
+body.theme-juseongji {
 
-#main-screen.theme-juseongji {
-
-    background-color: #af6464 !important;
+    background-color: #af6464;
 
 }
 
@@ -1525,18 +1526,13 @@ textarea:focus-visible {
 }
 
 
-#main-screen.theme-juseongji .main-footer {
+/* =========================
+   2. 각수
+========================= */
 
-    background-color: #af6464 !important;
+body.theme-gaksu {
 
-}
-
-
-/* 각수 */
-
-#main-screen.theme-gaksu {
-
-    background-color: #536834 !important;
+    background-color: #536834;
 
 }
 
@@ -1548,18 +1544,13 @@ textarea:focus-visible {
 }
 
 
-#main-screen.theme-gaksu .main-footer {
+/* =========================
+   3. 리아
+========================= */
 
-    background-color: #536834 !important;
+body.theme-ria {
 
-}
-
-
-/* 리아 */
-
-#main-screen.theme-ria {
-
-    background-color: #8c97f7 !important;
+    background-color: #8c97f7;
 
 }
 
@@ -1571,18 +1562,13 @@ textarea:focus-visible {
 }
 
 
-#main-screen.theme-ria .main-footer {
+/* =========================
+   4. 유리류
+========================= */
 
-    background-color: #8c97f7 !important;
+body.theme-yuriryu {
 
-}
-
-
-/* 유리류 */
-
-#main-screen.theme-yuriryu {
-
-    background-color: #21177b !important;
+    background-color: #21177b;
 
 }
 
@@ -1594,18 +1580,13 @@ textarea:focus-visible {
 }
 
 
-#main-screen.theme-yuriryu .main-footer {
+/* =========================
+   5. 버프
+========================= */
 
-    background-color: #21177b !important;
+body.theme-beopeu {
 
-}
-
-
-/* 버프 */
-
-#main-screen.theme-beopeu {
-
-    background-color: #39b07e !important;
+    background-color: #39b07e;
 
 }
 
@@ -1617,18 +1598,13 @@ textarea:focus-visible {
 }
 
 
-#main-screen.theme-beopeu .main-footer {
+/* =========================
+   6. S급
+========================= */
 
-    background-color: #39b07e !important;
+body.theme-s급 {
 
-}
-
-
-/* S급 */
-
-#main-screen.theme-s급 {
-
-    background-color: #b0393b !important;
+    background-color: #b0393b;
 
 }
 
@@ -1640,18 +1616,13 @@ textarea:focus-visible {
 }
 
 
-#main-screen.theme-s급 .main-footer {
+/* =========================
+   7. remember
+========================= */
 
-    background-color: #b0393b !important;
+body.theme-remember {
 
-}
-
-
-/* remember */
-
-#main-screen.theme-remember {
-
-    background-color: #dcedd9 !important;
+    background-color: #dcedd9;
 
 }
 
