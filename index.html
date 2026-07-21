@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CLW ARCHIVE SYSTEM</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         입장 화면
+    ========================== -->
+
+    <section id="login-screen" class="screen active">
+
+        <div class="login-box">
+
+            <div class="login-logo">
+                <img src="Z.png" alt="CLW Archive Logo">
+            </div>
+
+            <div class="system-title">
+                CLW ARCHIVE SYSTEM
+            </div>
+
+            <div class="system-subtitle">
+                EMPLOYEE ACCESS PORTAL
+            </div>
+
+            <div class="login-divider"></div>
+
+            <label for="employee-name">
+                직원 이름을 입력하시오.
+            </label>
+
+            <input
+                type="text"
+                id="employee-name"
+                autocomplete="off"
+                placeholder="직원 이름 입력"
+            >
+
+            <button id="enter-button" class="system-button">
+                ENTER ARCHIVE
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         로딩 화면
+    ========================== -->
+
+    <section id="loading-screen" class="screen">
+
+        <div class="loading-box">
+
+            <div class="loading-logo">
+                <img src="Z.png" alt="CLW Archive Logo">
+            </div>
+
+            <div class="loading-title">
+                CLW ARCHIVE SYSTEM
+            </div>
+
+            <div class="loading-text">
+                CONNECTING TO ARCHIVE...
+            </div>
+
+            <div class="loading-bar">
+                <div id="loading-progress"></div>
+            </div>
+
+            <div class="loading-status">
+                SYSTEM ONLINE
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         메인 화면
+    ========================== -->
+
+    <section id="main-screen" class="screen">
+
+        <!-- 상단 헤더 -->
+
+        <header class="main-header">
+
+            <div class="header-brand">
+
+                <img
+                    src="Z.png"
+                    alt="CLW Archive Logo"
+                    class="header-logo"
+                >
+
+                <div class="header-system-info">
+
+                    <div class="header-title">
+                        CLW ARCHIVE SYSTEM
+                    </div>
+
+                    <div class="header-status">
+                        SYSTEM ONLINE
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-time">
+
+                <span class="time-label">
+                    CLW TIME
+                </span>
+
+                <span id="clw-time">
+                    CLW 00:00:00
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- 메인 콘텐츠 -->
+
+        <main class="main-content">
+
+
+            <!-- 유저 프로필 -->
+
+            <section class="user-profile panel">
+
+                <div class="panel-title">
+                    USER PROFILE
+                </div>
+
+                <div class="profile-content">
+
+                    <div class="profile-image-frame">
+
+                        <img
+                            src="W.png"
+                            alt="Employee ID Photo"
+                            class="profile-image"
+                        >
+
+                    </div>
+
+
+                    <div class="profile-info">
+
+                        <div class="profile-name">
+                            USER:
+                            <span id="user-name">
+                                UNKNOWN
+                            </span>
+                        </div>
+
+                        <div class="profile-status">
+                            <span class="online-dot"></span>
+                            ONLINE
+                        </div>
+
+                        <div class="profile-location">
+                            LOCATION:
+                            <span>보관소</span>
+                        </div>
+
+                        <div class="profile-access">
+                            ACCESS LEVEL:
+                            <span>STAFF</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="logout-button"
+                    class="system-button logout-button"
+                >
+                    LOG OUT
+                </button>
+
+            </section>
+
+
+            <!-- 시스템 상태 -->
+
+            <section class="system-status panel">
+
+                <div class="panel-title">
+                    SYSTEM STATUS
+                </div>
+
+                <div class="status-list">
+
+                    <div class="status-item">
+
+                        <span>
+                            ARCHIVE CONNECTION
+                        </span>
+
+                        <strong>
+                            ONLINE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="status-item">
+
+                        <span>
+                            SECURITY STATUS
+                        </span>
+
+                        <strong>
+                            STABLE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="status-item">
+
+                        <span>
+                            ARCHIVE INTEGRITY
+                        </span>
+
+                        <strong>
+                            98.4%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="status-item">
+
+                        <span>
+                            CURRENT LOCATION
+                        </span>
+
+                        <strong>
+                            ARCHIVE
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+                 <!-- =========================
+                 시스템 공지
+            ========================== -->
+
+            <section class="system-notice panel">
+
+                <div class="panel-title">
+                    SYSTEM NOTICE
+                </div>
+
+                <div class="notice-content">
+
+                    모든 이상 현상 기록은 허가 없이
+                    외부로 반출할 수 없습니다.
+
+                    <br><br>
+
+                    기록 자료의 무단 복제 및 외부 전송은
+                    내부 규정에 따라 제한됩니다.
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 메시지 전송
+            ========================== -->
+
+            <section class="message-transmission panel">
+
+                <div class="panel-title">
+                    MESSAGE TRANSMISSION
+                </div>
+
+
+                <label for="message-recipient">
+                    RECIPIENT
+                </label>
+
+                <select id="message-recipient">
+
+                    <option value="소장실">
+                        소장실
+                    </option>
+
+                    <option value="사무실">
+                        사무실
+                    </option>
+
+                    <option value="기계관리실">
+                        기계관리실
+                    </option>
+
+                    <option value="의무실">
+                        의무실
+                    </option>
+
+                    <option value="기록관측실">
+                        기록관측실
+                    </option>
+
+                </select>
+
+
+                <label for="message-input">
+                    MESSAGE
+                </label>
+
+                <textarea
+                    id="message-input"
+                    placeholder="메시지를 입력하시오."
+                ></textarea>
+
+
+                <button
+                    id="send-message-button"
+                    class="system-button"
+                >
+                    SEND MESSAGE
+                </button>
+
+
+                <div
+                    id="message-result"
+                    class="transmission-result"
+                ></div>
+
+            </section>
+
+
+            <!-- =========================
+                 파일 전송
+            ========================== -->
+
+            <section class="file-transmission panel">
+
+                <div class="panel-title">
+                    FILE TRANSMISSION
+                </div>
+
+
+                <div class="file-list">
+
+                    <button
+                        class="file-item"
+                        data-file="보고서.clw"
+                    >
+                        보고서.clw
+                    </button>
+
+                    <button
+                        class="file-item"
+                        data-file="이상현상관측기록.clw"
+                    >
+                        이상현상관측기록.clw
+                    </button>
+
+                    <button
+                        class="file-item"
+                        data-file="이상_현상_기록화.png"
+                    >
+                        이상_현상_기록화.png
+                    </button>
+
+                    <button
+                        class="file-item"
+                        data-file="사건경위서.clw"
+                    >
+                        사건경위서.clw
+                    </button>
+
+                    <button
+                        class="file-item"
+                        data-file="지원_요청서.clw"
+                    >
+                        지원_요청서.clw
+                    </button>
+
+                    <button
+                        class="file-item"
+                        data-file="의무기록.clw"
+                    >
+                        의무기록.clw
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="selected-file"
+                    class="selected-file"
+                >
+                    SELECT FILE
+                </div>
+
+
+                <label for="file-recipient">
+                    RECIPIENT
+                </label>
+
+                <select id="file-recipient">
+
+                    <option value="소장실">
+                        소장실
+                    </option>
+
+                    <option value="사무실">
+                        사무실
+                    </option>
+
+                    <option value="기계관리실">
+                        기계관리실
+                    </option>
+
+                    <option value="의무실">
+                        의무실
+                    </option>
+
+                    <option value="기록관측실">
+                        기록관측실
+                    </option>
+
+                </select>
+
+
+                <button
+                    id="send-file-button"
+                    class="system-button"
+                >
+                    SEND FILE
+                </button>
+
+
+                <div
+                    id="file-result"
+                    class="transmission-result"
+                ></div>
+
+            </section>
+
+        </main>
+
+
+        <!-- 하단 -->
+
+        <footer class="main-footer">
+
+            <span>
+                CLW ARCHIVE SYSTEM
+            </span>
+
+            <span>
+                INTERNAL USE ONLY
+            </span>
+
+        </footer>
+
+    </section>
+
+
+</body>
+</html>
