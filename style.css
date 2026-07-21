@@ -1508,28 +1508,45 @@ textarea:focus-visible {
    인물별 메인 테마
 ========================= */
 
-body.theme-juseongji #main-screen {
+body.theme-juseongji #main-screen,
+body.theme-juseongji .main-header {
     background-color: #af6464;
 }
 
 
-body.theme-gaksu #main-screen {
+body.theme-gaksu #main-screen,
+body.theme-gaksu .main-header {
     background-color: #536834;
 }
 
 
-body.theme-ria #main-screen {
+body.theme-ria #main-screen,
+body.theme-ria .main-header {
     background-color: #8c97f7;
 }
 
 
-body.theme-yuriryu #main-screen {
+body.theme-yuriryu #main-screen,
+body.theme-yuriryu .main-header {
     background-color: #21177b;
 }
 
 
-body.theme-beopeu #main-screen {
+body.theme-beopeu #main-screen,
+body.theme-beopeu .main-header {
     background-color: #39b07e;
+}
+
+
+body.theme-s급 #main-screen,
+body.theme-s급 .main-header {
+    background-color: #b0393b;
+}
+
+
+body.theme-remember #main-screen,
+body.theme-remember .main-header {
+    background-color: #dcedd9;
 }
 
 
