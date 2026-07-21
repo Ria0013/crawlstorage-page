@@ -1504,78 +1504,131 @@ textarea:focus-visible {
 }
 
 
-
 /* =========================
    인물별 테마
 ========================= */
 
 
-/* 1. 주성지 */
+/* =========================
+   1. 주성지
+========================= */
 
-body.theme-juseongji #main-screen .main-header,
-body.theme-juseongji #main-screen .header-brand,
-body.theme-juseongji #main-screen .header-time {
+#main-screen.theme-juseongji {
 
     background-color: #af6464 !important;
 
 }
 
 
-/* 2. 각수 */
+#main-screen.theme-juseongji .main-header {
 
-body.theme-gaksu #main-screen .main-header,
-body.theme-gaksu #main-screen .header-brand,
-body.theme-gaksu #main-screen .header-time {
+    background-color: #af6464 !important;
+
+}
+
+
+/* =========================
+   2. 각수
+========================= */
+
+#main-screen.theme-gaksu {
 
     background-color: #536834 !important;
 
 }
 
 
-/* 리아 */
+#main-screen.theme-gaksu .main-header {
 
-body.theme-ria #main-screen .main-header {
+    background-color: #536834 !important;
+
+}
+
+
+/* =========================
+   3. 리아
+========================= */
+
+#main-screen.theme-ria {
 
     background-color: #8c97f7 !important;
 
 }
 
 
-/* 4. 유리류 */
+#main-screen.theme-ria .main-header {
 
-body.theme-yuriryu #main-screen .main-header,
-body.theme-yuriryu #main-screen .header-brand,
-body.theme-yuriryu #main-screen .header-time {
+    background-color: #8c97f7 !important;
+
+}
+
+
+/* =========================
+   4. 유리류
+========================= */
+
+#main-screen.theme-yuriryu {
 
     background-color: #21177b !important;
 
 }
 
 
-/* 5. 버프 */
+#main-screen.theme-yuriryu .main-header {
 
-body.theme-beopeu #main-screen .main-header,
-body.theme-beopeu #main-screen .header-brand,
-body.theme-beopeu #main-screen .header-time {
+    background-color: #21177b !important;
+
+}
+
+
+/* =========================
+   5. 버프
+========================= */
+
+#main-screen.theme-beopeu {
 
     background-color: #39b07e !important;
 
 }
 
 
-/* S급 */
+#main-screen.theme-beopeu .main-header {
 
-body.theme-s급 #main-screen .main-header {
+    background-color: #39b07e !important;
+
+}
+
+
+/* =========================
+   6. S급
+========================= */
+
+#main-screen.theme-s급 {
 
     background-color: #b0393b !important;
 
 }
 
-/* 7. remember */
 
-body.theme-remember #main-screen .main-header,
-body.theme-remember #main-screen .header-brand,
-body.theme-remember #main-screen .header-time {
+#main-screen.theme-s급 .main-header {
+
+    background-color: #b0393b !important;
+
+}
+
+
+/* =========================
+   7. remember
+========================= */
+
+#main-screen.theme-remember {
+
+    background-color: #dcedd9 !important;
+
+}
+
+
+#main-screen.theme-remember .main-header {
 
     background-color: #dcedd9 !important;
 
