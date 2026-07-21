@@ -55,6 +55,29 @@ function showScreen(screen) {
 
 }
 
+// =========================
+// 특정 인물 전용 테마
+// =========================
+
+function changeTheme(name) {
+
+    document.body.classList.remove(
+        "theme-special"
+    );
+
+
+    if (
+        name === "주성지"
+    ) {
+
+        document.body.classList.add(
+            "theme-special"
+        );
+
+    }
+
+}
+
 
 // =========================
 // 입장 기능
@@ -79,6 +102,10 @@ enterButton.addEventListener(
 
         userName.textContent =
             employeeName;
+
+        changeTheme(
+            employeeName
+        );
 
 
         showScreen(
@@ -155,6 +182,10 @@ logoutButton.addEventListener(
 
         userName.textContent =
             "UNKNOWN";
+
+        document.body.classList.remove(
+            "theme-special"
+        );
 
 
         employeeNameInput.focus();
