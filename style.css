@@ -1532,11 +1532,9 @@ body.theme-gaksu #main-screen .header-time {
 }
 
 
-/* 3. 리아 */
+/* 리아 */
 
-body.theme-ria #main-screen .main-header,
-body.theme-ria #main-screen .header-brand,
-body.theme-ria #main-screen .header-time {
+body.theme-ria #main-screen .main-header {
 
     background-color: #8c97f7 !important;
 
@@ -1565,16 +1563,13 @@ body.theme-beopeu #main-screen .header-time {
 }
 
 
-/* 6. S급 */
+/* S급 */
 
-body.theme-s급 #main-screen .main-header,
-body.theme-s급 #main-screen .header-brand,
-body.theme-s급 #main-screen .header-time {
+body.theme-s급 #main-screen .main-header {
 
     background-color: #b0393b !important;
 
 }
-
 
 /* 7. remember */
 
