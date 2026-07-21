@@ -6,6 +6,9 @@ const loginScreen = document.getElementById("login-screen");
 const loadingScreen = document.getElementById("loading-screen");
 const mainScreen = document.getElementById("main-screen");
 
+const anomalyScreen =
+    document.getElementById("anomaly-screen");
+
 const employeeNameInput =
     document.getElementById("employee-name");
 
@@ -20,6 +23,26 @@ const userName =
 
 const loadingProgress =
     document.getElementById("loading-progress");
+
+
+// =========================
+// 화면 전환
+// =========================
+
+function showScreen(screen) {
+
+    loginScreen.classList.remove("active");
+
+    loadingScreen.classList.remove("active");
+
+    mainScreen.classList.remove("active");
+
+    anomalyScreen.classList.remove("active");
+
+
+    screen.classList.add("active");
+
+}
 
 
 
@@ -460,9 +483,6 @@ window.addEventListener(
 // 숨겨진 이상 현상 페이지
 // =========================
 
-const anomalyScreen =
-    document.getElementById("anomaly-screen");
-
 
 const returnArchiveButton =
     document.getElementById(
@@ -477,25 +497,6 @@ const mainLogo =
         ".header-logo"
     );
 
-
-// =========================
-// 화면 전환 함수 수정
-// =========================
-
-function showScreen(screen) {
-
-    loginScreen.classList.remove("active");
-
-    loadingScreen.classList.remove("active");
-
-    mainScreen.classList.remove("active");
-
-    anomalyScreen.classList.remove("active");
-
-
-    screen.classList.add("active");
-
-}
 
 
 // =========================
