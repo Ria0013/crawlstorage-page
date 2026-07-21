@@ -1509,9 +1509,7 @@ textarea:focus-visible {
 ========================= */
 
 
-/* =========================
-   1. 주성지
-========================= */
+/* 주성지 */
 
 #main-screen.theme-juseongji {
 
@@ -1527,9 +1525,14 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   2. 각수
-========================= */
+#main-screen.theme-juseongji .main-footer {
+
+    background-color: #af6464 !important;
+
+}
+
+
+/* 각수 */
 
 #main-screen.theme-gaksu {
 
@@ -1545,9 +1548,14 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   3. 리아
-========================= */
+#main-screen.theme-gaksu .main-footer {
+
+    background-color: #536834 !important;
+
+}
+
+
+/* 리아 */
 
 #main-screen.theme-ria {
 
@@ -1563,9 +1571,14 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   4. 유리류
-========================= */
+#main-screen.theme-ria .main-footer {
+
+    background-color: #8c97f7 !important;
+
+}
+
+
+/* 유리류 */
 
 #main-screen.theme-yuriryu {
 
@@ -1581,9 +1594,14 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   5. 버프
-========================= */
+#main-screen.theme-yuriryu .main-footer {
+
+    background-color: #21177b !important;
+
+}
+
+
+/* 버프 */
 
 #main-screen.theme-beopeu {
 
@@ -1599,9 +1617,14 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   6. S급
-========================= */
+#main-screen.theme-beopeu .main-footer {
+
+    background-color: #39b07e !important;
+
+}
+
+
+/* S급 */
 
 #main-screen.theme-s급 {
 
@@ -1617,9 +1640,14 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   7. remember
-========================= */
+#main-screen.theme-s급 .main-footer {
+
+    background-color: #b0393b !important;
+
+}
+
+
+/* remember */
 
 #main-screen.theme-remember {
 
@@ -1629,6 +1657,13 @@ textarea:focus-visible {
 
 
 #main-screen.theme-remember .main-header {
+
+    background-color: #dcedd9 !important;
+
+}
+
+
+#main-screen.theme-remember .main-footer {
 
     background-color: #dcedd9 !important;
 
