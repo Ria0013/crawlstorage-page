@@ -62,8 +62,7 @@ function showScreen(screen) {
 
 function changeTheme(name) {
 
-
-    mainScreen.classList.remove(
+    document.body.classList.remove(
 
         "theme-juseongji",
 
@@ -83,14 +82,14 @@ function changeTheme(name) {
 
 
     const lowerName =
-        name.toLowerCase();
+        name.trim().toLowerCase();
 
 
     if (
         lowerName === "juseongji"
     ) {
 
-        mainScreen.classList.add(
+        document.body.classList.add(
             "theme-juseongji"
         );
 
@@ -101,7 +100,7 @@ function changeTheme(name) {
         lowerName === "gaksu"
     ) {
 
-        mainScreen.classList.add(
+        document.body.classList.add(
             "theme-gaksu"
         );
 
@@ -112,7 +111,7 @@ function changeTheme(name) {
         lowerName === "ria"
     ) {
 
-        mainScreen.classList.add(
+        document.body.classList.add(
             "theme-ria"
         );
 
@@ -123,7 +122,7 @@ function changeTheme(name) {
         lowerName === "yuriryu"
     ) {
 
-        mainScreen.classList.add(
+        document.body.classList.add(
             "theme-yuriryu"
         );
 
@@ -134,7 +133,7 @@ function changeTheme(name) {
         lowerName === "beopeu"
     ) {
 
-        mainScreen.classList.add(
+        document.body.classList.add(
             "theme-beopeu"
         );
 
@@ -142,10 +141,10 @@ function changeTheme(name) {
 
 
     else if (
-        name === "S급"
+        lowerName === "s급".toLowerCase()
     ) {
 
-        mainScreen.classList.add(
+        document.body.classList.add(
             "theme-s급"
         );
 
@@ -156,7 +155,7 @@ function changeTheme(name) {
         lowerName === "remember"
     ) {
 
-        mainScreen.classList.add(
+        document.body.classList.add(
             "theme-remember"
         );
 
